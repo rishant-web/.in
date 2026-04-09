@@ -9,7 +9,6 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
     <style>
         :root { --neon: #00f2ff; --dark: #050a14; --glass: rgba(255, 255, 255, 0.03); }
         body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #e2e8f0; scroll-behavior: smooth; overflow-x: hidden; }
@@ -50,16 +49,12 @@
         }
         .btn-neon:hover { transform: scale(1.02); box-shadow: 0 0 20px var(--neon); }
 
-        /* ✅ ONLY MOBILE FIX */
-        .hero-title { word-break: break-word; }
-
         @media (max-width: 768px) {
-            .hero-title { font-size: 3.2rem !important; line-height: 1.1; }
+            .hero-title { font-size: 3.5rem !important; line-height: 1.1; }
             .grid-bg { background-size: 20px 20px; }
         }
     </style>
 </head>
-
 <body class="grid-bg">
 
     <nav class="flex justify-between items-center px-4 md:px-12 py-4 md:py-6 sticky top-0 z-50 glass-card mx-2 md:mx-4 my-2 md:my-4 rounded-xl md:rounded-2xl">
@@ -77,18 +72,13 @@
         <div class="mono text-[#00f2ff] text-[10px] md:text-sm mb-6 opacity-80 border border-[#00f2ff]/30 px-4 py-1 rounded-full">
             SYSTEM_STATUS: ONLINE
         </div>
-
-        <!-- ✅ only class tweak -->
-        <h1 class="hero-title text-4xl sm:text-5xl md:text-9xl font-extrabold mb-8 tracking-tighter">
+        <h1 class="hero-title text-5xl md:text-9xl font-extrabold mb-8 tracking-tighter">
             ENGINEERING <br> <span class="italic text-transparent" style="-webkit-text-stroke: 1px #00f2ff;">DIGITAL</span> CORE
         </h1>
-
         <p class="max-w-xl text-sm md:text-lg opacity-50 mb-12 font-light leading-relaxed">
             Scalable, high-latency optimized web ecosystems for next-gen digital businesses.
         </p>
-
-        <!-- ✅ only flex tweak -->
-        <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto px-6">
+        <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto px-6">
             <a href="#contact" class="btn-neon px-10 py-4 rounded-xl text-center">Build My Platform</a>
             <a href="#services" class="glass-card px-10 py-4 rounded-xl mono text-sm font-bold border-white/20 text-center">View_Stack.sh</a>
         </div>
@@ -99,21 +89,17 @@
             <span class="mono text-[#00f2ff] text-xs"># Our_Capabilities</span>
             <h2 class="text-4xl md:text-5xl font-extrabold mt-4">Core Architecture</h2>
         </div>
-
-        <!-- ✅ grid tweak -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass-card p-8 md:p-10 rounded-3xl">
                 <div class="text-[#00f2ff] mono mb-6 text-sm">// 01</div>
                 <h3 class="text-xl md:text-2xl font-bold mb-4">Frontend Engineering</h3>
                 <p class="opacity-50 text-xs md:text-sm leading-loose">High-performance UI built with Next.js for sub-second loading.</p>
             </div>
-
             <div class="glass-card p-8 md:p-10 rounded-3xl">
                 <div class="text-[#00f2ff] mono mb-6 text-sm">// 02</div>
                 <h3 class="text-xl md:text-2xl font-bold mb-4">Backend Systems</h3>
                 <p class="opacity-50 text-xs md:text-sm leading-loose">Robust API architecture and secure cloud database management.</p>
             </div>
-
             <div class="glass-card p-8 md:p-10 rounded-3xl">
                 <div class="text-[#00f2ff] mono mb-6 text-sm">// 03</div>
                 <h3 class="text-xl md:text-2xl font-bold mb-4">Cloud Infrastructure</h3>
@@ -124,27 +110,24 @@
 
     <section id="contact" class="py-20 md:py-32 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20">
-
             <div class="text-center md:text-left">
-                <h2 class="text-5xl md:text-6xl font-extrabold mb-8">
-                    Execute <br> <span class="text-[#00f2ff]">Collaboration</span>
-                </h2>
-                <p class="opacity-50 mb-12 text-sm md:text-base">
-                    Input your parameters. Response via encrypted channel within 24 hours.
-                </p>
-
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-8">Execute <br> <span class="text-[#00f2ff]">Collaboration</span></h2>
+                <p class="opacity-50 mb-12 text-sm md:text-base">Input your parameters. Response via encrypted channel within 24 hours.</p>
                 <div class="space-y-4 mono text-[10px] md:text-sm opacity-60">
                     <p><span class="text-[#00f2ff]">HOST:</span> Vrindavan, IN</p>
                     <p><span class="text-[#00f2ff]">MAIL:</span> rishantbhaumik@gmail.com</p>
                 </div>
             </div>
 
+            <!-- ✅ ONLY FIXED PART -->
             <div class="glass-card p-8 md:p-14 rounded-[30px] md:rounded-[40px]">
-                <h3 class="text-lg font-bold mb-8 mono uppercase tracking-widest text-[#00f2ff]">
-                    Terminal_Input
-                </h3>
+                <h3 class="text-lg font-bold mb-8 mono uppercase tracking-widest text-[#00f2ff]">Terminal_Input</h3>
+                
+                <form action="https://formspree.io/f/mojpzbbw" method="POST" class="space-y-6">
 
-                <form action="<form action="https://formspree.io/f/mojpzbbw" method="POST">" class="space-y-6">
+                    <input type="hidden" name="_subject" value="New Message from Rishant Web">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div>
                         <label class="text-[9px] uppercase font-bold opacity-40 mb-2 block">Identity</label>
                         <input type="text" name="name" class="tech-input" placeholder="Full Name" required>
@@ -152,7 +135,7 @@
 
                     <div>
                         <label class="text-[9px] uppercase font-bold opacity-40 mb-2 block">Communication_Port</label>
-                        <input type="email" name="_replyto" class="tech-input" placeholder="email@address.com" required>
+                        <input type="email" name="email" class="tech-input" placeholder="email@address.com" required>
                     </div>
 
                     <div>
@@ -171,21 +154,17 @@
 
     <footer class="py-16 md:py-20 px-6 border-t border-white/5">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
-
             <div class="mono text-lg font-bold">
                 RISHANT<span class="text-[#00f2ff]">_CENTER</span>
             </div>
-
             <div class="flex gap-6 md:gap-10 opacity-40 text-[9px] uppercase font-bold tracking-widest">
                 <a href="#">Github</a>
                 <a href="#">Instagram</a>
                 <a href="#">LinkedIn</a>
             </div>
-
             <div class="text-[9px] opacity-20 mono uppercase">
                 © 2026 Build_ID: 1.0.4_Mobile
             </div>
-
         </div>
     </footer>
 
