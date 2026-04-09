@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishant Web Dev | Next-Gen Software Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon: #00f2ff; --dark: #050a14; --glass: rgba(255, 255, 255, 0.03); }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #e2e8f0; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Technical Background Effect */
+        .grid-bg {
+            background-image: linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover { border-color: var(--neon); box-shadow: 0 0 20px rgba(0, 242, 255, 0.15); }
+
+        /* Input Visibility Fix */
+        .tech-input {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: white !important; /* Force white text on dark bg */
+            padding: 15px;
+            border-radius: 8px;
+            outline: none;
+            width: 100%;
+        }
+        .tech-input:focus { border-color: var(--neon); background: rgba(0, 242, 255, 0.05); }
+        
+        .btn-neon {
+            background: var(--neon);
+            color: var(--dark);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+        .btn-neon:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--neon); }
+    </style>
+</head>
+<body class="grid-bg">
+
+    <nav class="flex justify-between items-center px-6 md:px-12 py-6 sticky top-0 z-50 glass-card mx-4 my-4 rounded-2xl">
+        <div class="text-xl font-extrabold tracking-tighter mono">
+            <span class="text-white">RISHANT</span><span class="text-[#00f2ff]">WEB_DEVELOP</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-widest font-bold opacity-60">
+            <a href="#stack" class="hover:text-[#00f2ff]">Tech Stack</a>
+            <a href="#services" class="hover:text-[#00f2ff]">Architecture</a>
+            <a href="#contact" class="hover:text-[#00f2ff]">Terminal</a>
+        </div>
+        <a href="#contact" class="btn-neon px-6 py-2 rounded-lg text-xs">Initialize Project</a>
+    </nav>
+
+    <section class="min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
+        <div class="mono text-[#00f2ff] text-sm mb-6 opacity-80 border border-[#00f2ff]/30 px-4 py-1 rounded-full">
+            SYSTEM_STATUS: READY_FOR_DEPLOYMENT
+        </div>
+        <h1 class="text-6xl md:text-9xl font-extrabold mb-8 tracking-tighter leading-none">
+            WEBSITE <br> <span class="italic text-transparent" style="-webkit-text-stroke: 1px #00f2ff;">DIGITAL</span> CORE
+        </h1>
+        <p class="max-w-2xl text-lg opacity-50 mb-12 font-light leading-relaxed">
+            Rishant Web Develop Center provides high-latency optimized, scalable, and secure web ecosystems for the next generation of digital businesses.
+        </p>
+        <div class="flex flex-col md:flex-row gap-6">
+            <a href="#contact" class="btn-neon px-10 py-5 rounded-xl">Build My Platform</a>
+            <a href="#stack" class="glass-card px-10 py-5 rounded-xl mono text-sm font-bold border-white/20">View_Stack.sh</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="mb-20">
+            <span class="mono text-[#00f2ff]"># Our_Capabilities</span>
+            <h2 class="text-5xl font-extrabold mt-4">Core Architecture</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-[#00f2ff] mono mb-6 text-sm">// 01</div>
+                <h3 class="text-2xl font-bold mb-4">Frontend Engineering</h3>
+                <p class="opacity-50 text-sm leading-loose">High-performance UI built with React/Next.js for sub-second loading and seamless transitions.</p>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-[#00f2ff] mono mb-6 text-sm">// 02</div>
+                <h3 class="text-2xl font-bold mb-4">Backend Systems</h3>
+                <p class="opacity-50 text-sm leading-loose">Robust API architecture and server-side logic using Node.js and secure database management.</p>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-[#00f2ff] mono mb-6 text-sm">// 03</div>
+                <h3 class="text-2xl font-bold mb-4">Cloud Infrastructure</h3>
+                <p class="opacity-50 text-sm leading-loose">Deployment on AWS/Vercel with automated CI/CD pipelines and 99.9% uptime guarantee.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-6xl font-extrabold mb-8">Execute <br> <span class="text-[#00f2ff]">Collaboration</span></h2>
+                <p class="opacity-50 mb-12 max-w-md">Input your parameters below. Our system will analyze your requirements and respond via encrypted channel within 24 hours.</p>
+                <div class="space-y-4 mono text-sm">
+                    <p><span class="text-[#00f2ff]">HOST:</span> Vrindavan, IN</p>
+                    <p><span class="text-[#00f2ff]">MAIL:</span> rishantbhaumik@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="glass-card p-10 md:p-14 rounded-[40px]">
+                <h3 class="text-xl font-bold mb-8 mono uppercase tracking-widest text-[#00f2ff]">Terminal_Input</h3>
+                
+                <form action="https://formspree.io/f/rishantbhaumik@gmail.com" method="POST" class="space-y-6">
+                    <div>
+                        <label class="text-[10px] uppercase font-bold opacity-40 mb-2 block">Identity</label>
+                        <input type="text" name="name" class="tech-input" placeholder="Enter Full Name" required>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold opacity-40 mb-2 block">Communication_Port</label>
+                        <input type="email" name="_replyto" class="tech-input" placeholder="email@address.com" required>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold opacity-40 mb-2 block">Payload_Description</label>
+                        <textarea name="message" class="tech-input h-32" placeholder="Describe your project architecture..." required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://yourwebsite.com">
+                    
+                    <button type="submit" class="w-full btn-neon py-5 rounded-xl">Transmit Data</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="mono text-xl font-bold">
+                RISHANT<span class="text-[#00f2ff]">_CENTER</span>
+            </div>
+            <div class="flex gap-10 opacity-40 text-[10px] uppercase font-bold tracking-widest">
+                <a href="#" class="hover:text-[#00f2ff]">Github</a>
+                <a href="#" class="hover:text-[#00f2ff]">Instagram</a>
+                <a href="#" class="hover:text-[#00f2ff]">LinkedIn</a>
+            </div>
+            <div class="text-[10px] opacity-20 mono uppercase">
+                © 2026 Build_ID: 9.8.0.2_Final
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
