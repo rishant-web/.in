@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishant Web Develop Center - Extended Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #050a10;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+        .font-mono { font-family: 'Fira Code', monospace; }
+        .text-outline-cyan {
+            -webkit-text-stroke: 2px #00e5ff;
+            color: transparent;
+            font-style: italic;
+        }
+        .gallery-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid #1a222c;
+        }
+        .gallery-card:hover {
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+            border-color: #00e5ff;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center pt-20 pb-20 px-4 md:px-8">
+
+    <div class="border border-[#00e5ff] rounded-full px-5 py-1.5 text-[#00e5ff] text-xs font-mono tracking-widest mb-10 uppercase bg-[#00e5ff]/5 backdrop-blur-sm shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+        SYSTEM_STATUS: CORE_GALLERY_LOADED
+    </div>
+
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-center leading-tight mb-20 tracking-tighter uppercase w-full max-w-7xl">
+        EXTENDED <br class="hidden md:block">
+        <span class="text-outline-cyan pr-2">PROJECT</span> HUB
+    </h1>
+
+    <div class="flex flex-col-reverse lg:flex-row gap-10 w-full max-w-7xl items-start mb-24">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow">
+            
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">CYBER_SECURITY</span>
+                    <h3 class="text-xl font-bold mt-1">Data Shield Pro</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">CLOUD_SYNC</span>
+                    <h3 class="text-xl font-bold mt-1">Orbit Node</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">SERVER_SIDE</span>
+                    <h3 class="text-xl font-bold mt-1">Vortex Engine</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">HARDWARE_UI</span>
+                    <h3 class="text-xl font-bold mt-1">Silicon Interface</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">AI_LOGIC</span>
+                    <h3 class="text-xl font-bold mt-1">Neural Net UI</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card bg-[#0b121c] rounded-xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600" class="w-full h-48 object-cover opacity-70 group-hover:opacity-100 transition-all">
+                <div class="p-5 border-t border-gray-800">
+                    <span class="text-[#00e5ff] font-mono text-[10px] tracking-widest">WEB_DEV</span>
+                    <h3 class="text-xl font-bold mt-1">Modern Stack</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full lg:w-80 flex-shrink-0 flex flex-col items-center lg:sticky lg:top-10">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-[#00e5ff] rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="l.png" alt="Logo" class="relative h-64 lg:h-auto w-full object-cover rounded-2xl border border-gray-800 shadow-2xl">
+            </div>
+            <p class="mt-4 text-gray-500 font-mono text-[10px] tracking-widest uppercase">Verified Developer</p>
+        </div>
+
+    </div>
+
+    <p class="text-gray-400 text-center text-lg max-w-3xl mb-12 px-4 leading-relaxed">
+        Discover our premium web architecture and high-performance digital ecosystems, exclusively crafted at <span class="text-white font-bold">Rishant Web Develop Center</span>.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto px-4">
+        <button class="bg-[#00e5ff] hover:bg-[#00c4db] text-black font-bold py-4 px-12 rounded-lg transition-all shadow-[0_0_20px_rgba(0,229,255,0.3)] uppercase text-sm tracking-widest">
+            VIEW ALL WORK
+        </button>
+        <a href="https://rishant-web.github.io/.in//" class="bg-[#0b121c] border border-gray-700 hover:border-[#00e5ff] text-gray-300 hover:text-[#00e5ff] font-mono py-4 px-10 rounded-lg transition-all text-center text-sm shadow-lg">
+            Return_Home.sh
+        </a>
+    </div>
+
+</body>
+</html>
